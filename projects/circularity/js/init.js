@@ -34,6 +34,10 @@ var init = function (window) {
         // TODO 3 / 7 : Call the drawCircle() function
 
 
+        for (var loopsCompleted = 0; loopsCompleted < 101; loopsCompleted++) {
+            drawCircle();
+        }
+
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
@@ -45,7 +49,9 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-
+            for(var c; c < circles.length; c++){
+                physikz.updatePosition(circles[c])
+            }
 
             // TODO 5 : Call game.checkCirclePosition() on your circles.
 
