@@ -10,10 +10,6 @@
 	<!-- BEGIN CSS -->
 	<style>
 		/* TODO 1 */
-
-     <body class="board">
-  <div class="box">?</div>
-</body>
 		.box {
 			width: 70px;
 			height: 70px;
@@ -49,9 +45,7 @@
             var points;         // reference for the points displayed on the box
             var speed;          // reference for how fast the box moves
             var direction;     // reference for the direction the box is moving: 1 means right, -1 means left
-            function moveBoxTo(newPositionX) {
-                box.css("left", newPositionX);
-            }
+
 
             position = 0;
             points = 0;
@@ -66,7 +60,7 @@
                     console.log("Right Wall Hit");
                     direction = -1;
                 }
-                else if (position < boardWidth) {
+                else if (position < 0) {
                     direction = 1;
                 }
                 box.css('left', position);      // set the 'left' CSS property of the box to the new value of position
