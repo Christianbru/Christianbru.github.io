@@ -51,6 +51,7 @@ var init = function (window) {
             // TODO 4 : Update the circle's position //
             for(var c; c < circles.length; c++){
                 physikz.updatePosition(circles[c])
+                game.checkCirclePosition(circles[c])
             }
 
             // TODO 5 : Call game.checkCirclePosition() on your circles.
@@ -74,9 +75,18 @@ var init = function (window) {
             }
 
             // TODO 5 : YOUR CODE STARTS HERE //////////////////////
-
-
-
+            // if the circle has gone past the LEFT side of the screen then place it on the RIGHT
+            if (  ) {
+                ;
+            }
+            // if the circle has gone past the TOP side of the screen then place it on the BOTTOM
+            if (  ) {
+                ;
+            }
+            // if the circle has gone past the BOTTOM side of the screen then place it on the TOP
+            if (  ) {
+                ;
+            }
             // YOUR TODO 5 CODE ENDS HERE //////////////////////////
         }
 
