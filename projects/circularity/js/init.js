@@ -1,5 +1,6 @@
 var init = function (window) {
     'use strict';
+
     var
         draw = window.opspark.draw,
         physikz = window.opspark.racket.physikz,
@@ -8,7 +9,6 @@ var init = function (window) {
         canvas = app.canvas,
         view = app.view,
         fps = draw.fps('#000');
-
 
     window.opspark.makeGame = function() {
 
@@ -76,16 +76,16 @@ var init = function (window) {
 
             // TODO 5 : YOUR CODE STARTS HERE //////////////////////
             // if the circle has gone past the LEFT side of the screen then place it on the RIGHT
-            if (  ) {
-                ;
+            if ( circle.x < 0 ) {
+                circle.x = canvas.width;
             }
             // if the circle has gone past the TOP side of the screen then place it on the BOTTOM
-            if (  ) {
-                ;
+            if ( circle.y < 0 ) {
+              circle.y = canvas.height;
             }
             // if the circle has gone past the BOTTOM side of the screen then place it on the TOP
-            if (  ) {
-                ;
+            if ( circle.y > canvas.height ) {
+               circle.y = 0;
             }
             // YOUR TODO 5 CODE ENDS HERE //////////////////////////
         }
